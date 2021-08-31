@@ -1,10 +1,9 @@
 {
-  "name": "nextjs-notion-starter-kit",
+  "name": "notion-blog",
   "version": "0.1.0",
   "private": true,
-  "description": "The perfect starter kit for building beautiful websites with Next.js and Notion.",
-  "author": "Travis Fischer <travis@transitivebullsh.it>",
-  "repository": "transitive-bullshit/nextjs-notion-starter-kit",
+  "description": "Blog para compartilhar conhecimentos de games e TI.",
+  "author": "Rodrigo Gonçalves",
   "license": "MIT",
   "engines": {
     "node": ">=10"
