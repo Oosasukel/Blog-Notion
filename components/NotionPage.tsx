@@ -35,6 +35,7 @@ import { PageSocial } from './PageSocial'
 import { ReactUtterances } from './ReactUtterances'
 
 import styles from './styles.module.css'
+import DisqusComments from 'services/Disqus'
 
 // const Code = dynamic(() =>
 //   import('react-notion-x').then((notion) => notion.Code)
@@ -260,10 +261,13 @@ export const NotionPage: React.FC<types.PageProps> = ({
         pageFooter={comments}
         pageAside={pageAside}
         footer={
-          <Footer
-            isDarkMode={darkMode.value}
-            toggleDarkMode={darkMode.toggle}
-          />
+          <>
+            {isBlogPost && <DisqusComments post={{ id: pageId, title }} />}
+            <Footer
+              isDarkMode={darkMode.value}
+              toggleDarkMode={darkMode.toggle}
+            />
+          </>
         }
       />
     </TwitterContextProvider>

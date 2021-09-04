@@ -1,0 +1,12 @@
+.commentsContainer {
+  width: var(--notion-max-width);
+  max-width: 100%;
+  padding-left: calc(min(12px, 8vw));
+  padding-right: calc(min(12px, 8vw));
+  padding-bottom: calc(max(5vh, 32px));
+
+  @media only screen and (max-width: 730px) .notion-page {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}

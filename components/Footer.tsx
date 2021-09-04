@@ -16,6 +16,9 @@ export const Footer: React.FC<{
     (e) => {
       e.preventDefault()
       toggleDarkMode()
+      setTimeout(() => {
+        document.dispatchEvent(new Event('themeChanged'))
+      }, 0)
     },
     [toggleDarkMode]
   )
